@@ -1,0 +1,336 @@
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/Lab8-pc24/Documents/git/Examen/.git/
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (main)
+$ git branch
+* main
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (main)
+$ git branch produccion
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (main)
+$ git branch ventas
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (main)
+$ git branch recurso_humano
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (main)
+$ git push origin produccion
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'produccion' on GitHub by visiting:
+remote:      https://github.com/Remixz7548/Examen/pull/new/produccion
+remote:
+To https://github.com/Remixz7548/Examen.git
+ * [new branch]      produccion -> produccion
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (main)
+$ git push origin ventas
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'ventas' on GitHub by visiting:
+remote:      https://github.com/Remixz7548/Examen/pull/new/ventas
+remote:
+To https://github.com/Remixz7548/Examen.git
+ * [new branch]      ventas -> ventas
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (main)
+$ git push origin recurso_humano
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'recurso_humano' on GitHub by visiting:
+remote:      https://github.com/Remixz7548/Examen/pull/new/recurso_humano
+remote:
+To https://github.com/Remixz7548/Examen.git
+ * [new branch]      recurso_humano -> recurso_humano
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (main)
+$ git checkout produccion
+Switched to branch 'produccion'
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (produccion)
+$ git checkout ventas
+Switched to branch 'ventas'
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (ventas)
+$ git checkout produccion
+Switched to branch 'produccion'
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (produccion)
+$ git push origin produccion
+Everything up-to-date
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (produccion)
+$ git add .
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (produccion)
+$ git commit -m "agregando paso 2 produccion"
+[produccion 691c008] agregando paso 2 produccion
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 imagenproducto.png
+ create mode 100644 materia prima.txt
+ create mode 100644 productofinal.txt
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (produccion)
+$ git push origin produccion
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 51.26 KiB | 25.63 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Remixz7548/Examen.git
+   e887aa8..691c008  produccion -> produccion
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (produccion)
+$ git checkout ventas
+Switched to branch 'ventas'
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (ventas)
+$ git add .
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (ventas)
+$ git commit -m "agregando paso 2 ventas"
+[ventas 74a49fe] agregando paso 2 ventas
+ 1 file changed, 3 insertions(+)
+ create mode 100644 tiendas.txt
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (ventas)
+$ git push origin ventas
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 317 bytes | 317.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Remixz7548/Examen.git
+   e887aa8..74a49fe  ventas -> ventas
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (ventas)
+$ git checkout recurso_humano
+Switched to branch 'recurso_humano'
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (recurso_humano)
+$ git add .
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (recurso_humano)
+$ git commit -m "agregando paso 2 recursos humanos"
+[recurso_humano 5e97009] agregando paso 2 recursos humanos
+ 1 file changed, 5 insertions(+)
+ create mode 100644 empleados.txt
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (recurso_humano)
+$ git push origin recurso_humano
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 341 bytes | 341.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Remixz7548/Examen.git
+   e887aa8..5e97009  recurso_humano -> recurso_humano
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (recurso_humano)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (main)
+$ git merge produccion
+Updating e887aa8..691c008
+Fast-forward
+ imagenproducto.png | Bin 0 -> 52322 bytes
+ materia prima.txt  |   0
+ productofinal.txt  |   0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 imagenproducto.png
+ create mode 100644 materia prima.txt
+ create mode 100644 productofinal.txt
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (main)
+$ git push origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Remixz7548/Examen.git
+   e887aa8..691c008  main -> main
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (main)
+$ git tag version1 -m "version 1"
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (main)
+$ git push --tag
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 170 bytes | 170.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Remixz7548/Examen.git
+ * [new tag]         version1 -> version1
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (main)
+$ git checkout recurso_humano
+Switched to branch 'recurso_humano'
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (recurso_humano)
+$ git add .
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (recurso_humano)
+$ git commit -m "agregando paso 6"
+[recurso_humano 94f92ff] agregando paso 6
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (recurso_humano)
+$ git push origin recurso_humano
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 356 bytes | 356.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Remixz7548/Examen.git
+   5e97009..94f92ff  recurso_humano -> recurso_humano
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (recurso_humano)
+$ dir
+empleados.txt  README.md
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (recurso_humano)
+$ git diff empleados.txt
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (recurso_humano)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (main)
+$ git merge recurso_humano
+Merge made by the 'ort' strategy.
+ empleados.txt | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+ create mode 100644 empleados.txt
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 316 bytes | 316.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Remixz7548/Examen.git
+   691c008..e02299c  main -> main
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (main)
+$ git tag version1.1 -m "version 1.1"
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (main)
+$ git push --tag
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 172 bytes | 172.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Remixz7548/Examen.git
+ * [new tag]         version1.1 -> version1.1
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (main)
+$ git checkout ventas
+Switched to branch 'ventas'
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (ventas)
+$ git add .
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (ventas)
+$ git commit -m "agregado paso 10"
+[ventas 9372bd1] agregado paso 10
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (ventas)
+$ git push origin ventas
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 331 bytes | 331.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Remixz7548/Examen.git
+   74a49fe..9372bd1  ventas -> ventas
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (ventas)
+$ git checkout recurso_humano
+Switched to branch 'recurso_humano'
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (recurso_humano)
+$ git add .
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (recurso_humano)
+$ git status
+On branch recurso_humano
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   fotos_empleados/foto1.webp
+        new file:   fotos_empleados/foto2.jpg
+        new file:   fotos_empleados/foto3.jpg
+        new file:   fotos_empleados/foto4.jpeg
+        new file:   fotos_empleados/foto5.jpg
+
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (recurso_humano)
+$ git commit -m "agregado paso 11"
+[recurso_humano ec04f5d] agregado paso 11
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fotos_empleados/foto1.webp
+ create mode 100644 fotos_empleados/foto2.jpg
+ create mode 100644 fotos_empleados/foto3.jpg
+ create mode 100644 fotos_empleados/foto4.jpeg
+ create mode 100644 fotos_empleados/foto5.jpg
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (recurso_humano)
+$ git push origin recurso_humano
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 310.99 KiB | 31.10 MiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Remixz7548/Examen.git
+   94f92ff..ec04f5d  recurso_humano -> recurso_humano
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (recurso_humano)
+$ git add .
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (recurso_humano)
+$ git  status
+On branch recurso_humano
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   sueldos.txt
+
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (recurso_humano)
+$ git commit -m "agregando paso 13"
+[recurso_humano 475fe91] agregando paso 13
+ 1 file changed, 4 insertions(+)
+ create mode 100644 sueldos.txt
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (recurso_humano)
+$ git push origin recurso_humano
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 349 bytes | 349.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Remixz7548/Examen.git
+   ec04f5d..475fe91  recurso_humano -> recurso_humano
+
+Lab8-pc24@DESKTOP-MF38BE2 MINGW64 ~/Documents/git/examen (recurso_humano)
