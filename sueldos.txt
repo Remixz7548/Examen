@@ -1,0 +1,4 @@
+Master $2000
+Desarrollador Full Stack $5000
+Desarrollador Junior $1000
+Desarrollador Front End $3000
